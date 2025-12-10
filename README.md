@@ -26,7 +26,6 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 And now, install git and chezmoi:
 
 ```powershell
-scoop bucket add main
 scoop install git chezmoi
 ```
 
