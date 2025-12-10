@@ -23,8 +23,6 @@ foreach ($pkg in $scoop_packages) {
 
 py -m ensurepip --upgrade
 
-foreach ($pkg in $scoop_packages) {
-    if (-not (scoop list | Select-String "^$pkg\$")) {
-        pip install $pkg
-    }
+foreach ($pkg in $pip_packages) {
+    pip install $pkg
 }

@@ -11,6 +11,6 @@ $scripts = @(
 )
 
 foreach ($s in $scripts) {
-    $fullPath = Join-Path $ScriptDir $s
+    $fullPath = Join-Path $SCRIPTS_DIR $s
     . $fullPath
 }
