@@ -1,0 +1,13 @@
+[init]
+	defaultBranch = main
+[user]
+	email = 125079293+gauloish@users.noreply.github.com
+	name = gauloish
+[credential]
+	helper = manager
+	credentialStore = cache
+	cacheOptions = --timeout 3600
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[core]
+	editor = nvim
