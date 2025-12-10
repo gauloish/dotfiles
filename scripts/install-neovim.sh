@@ -46,7 +46,7 @@ npm_packages=(
 )
 
 sudo dnf install -y "${dnf_packages[@]}"
-pip install -y "${pip_packages[@]}"
+pip install "${pip_packages[@]}"
 sudo npm install -g "${npm_packages[@]}"
 
 echo 'export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")' >> ~/.bashrc
