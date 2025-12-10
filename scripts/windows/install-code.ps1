@@ -1,2 +1,5 @@
-scoop bucket add extras
-scoop install extras/vscode
+winget install --id Microsoft.VisualStudioCode ^
+    --source winget ^
+    --accept-package-agreements ^
+    --accept-source-agreements ^
+    --exact
