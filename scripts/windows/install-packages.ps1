@@ -13,7 +13,7 @@ $scoop_packages = @(
 )
 
 foreach ($pkg in $scoop_packages) {
-    if (-not (scoop list | Select-String "^$pkg\$")) {
+    if (-not (scoop list | Select-String $pkg)) {
         scoop install $pkg
     }
 }
