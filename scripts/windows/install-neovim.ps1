@@ -1,24 +1,3 @@
-scoop install gcc
-scoop install make
-scoop install cmake
-
-scoop install python
-pip install pynvim
-pip install yarp
-
-scoop install nodejs
-
-scoop install rust
-
-scoop install lua
-scoop install luarocks
-
-scoop install grep
-scoop install ripgrep
-scoop install fd
-
-scoop install neovim
-
 $scoop_packages = @(
     "gcc",
     "make",
@@ -28,7 +7,7 @@ $scoop_packages = @(
     "rust",
     "lua",
     "luarocks",
-    "neovim",
+    "neovim"
 )
 
 $pip_packages = @(
@@ -42,7 +21,7 @@ foreach ($pkg in $scoop_packages) {
     }
 }
 
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py; python get-pip.py
+py -m ensurepip --upgrade
 
 foreach ($pkg in $scoop_packages) {
     if (-not (scoop list | Select-String "^$pkg\$")) {
