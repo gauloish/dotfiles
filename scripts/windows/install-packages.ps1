@@ -1,4 +1,4 @@
-. "$PSScriptRoot"\utils.ps1
+. "$PSScriptRoot\utils.ps1"
 
 $scoop_packages = @(
     "ln",

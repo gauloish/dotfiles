@@ -1,4 +1,4 @@
-. "$PSScriptRoot"\utils.ps1
+. "$PSScriptRoot\utils.ps1"
 
 $scoop_packages = @(
     "gcc",
@@ -17,7 +17,6 @@ $pip_packages = @(
     "pynvim",
     "yarp"
 )
-
 
 Install-ScoopPackages $scoop_packages
 py -m ensurepip --upgrade
