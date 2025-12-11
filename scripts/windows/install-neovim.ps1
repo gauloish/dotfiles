@@ -20,4 +20,4 @@ $pip_packages = @(
 
 Install-ScoopPackages $scoop_packages
 py -m ensurepip --upgrade
-Install-PipPackages $scoop_packages
+Install-PipPackages $pip_packages
