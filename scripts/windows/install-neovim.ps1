@@ -7,6 +7,7 @@ $scoop_packages = @(
     "rust",
     "lua",
     "luarocks",
+    "fzf",
     "neovim"
 )
 

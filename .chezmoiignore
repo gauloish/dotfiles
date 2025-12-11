@@ -1,2 +1,5 @@
 scripts
 README.md
+{{ if eq .chezmoi.os "linux" }}
+AppData
+{{ end }}
