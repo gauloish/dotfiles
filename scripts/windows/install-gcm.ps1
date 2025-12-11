@@ -1,2 +1,4 @@
+. "$PSScriptRoot"\utils.ps1
+
 scoop bucket add extras
-scoop install extras/git-credential-manager
+Install-ScoopPackages "extras/git-credential-manager"

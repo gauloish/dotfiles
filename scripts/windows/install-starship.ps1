@@ -1,4 +1,6 @@
-scoop install starship
+. "$PSScriptRoot"\utils.ps1
+
+Install-ScoopPackages "starship"
 
 $starshipCode = "Invoke-Expression (&starship init powershell)"
 

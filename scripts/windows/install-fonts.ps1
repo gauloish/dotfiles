@@ -1,2 +1,4 @@
+. "$PSScriptRoot"\utils.ps1
+
 scoop bucket add nerd-fonts
-scoop install nerd-fonts/JetBrains-Mono
+Install-ScoopPackages "nerd-fonts/JetBrains-Mono"

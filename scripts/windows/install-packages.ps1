@@ -1,3 +1,5 @@
+. "$PSScriptRoot"\utils.ps1
+
 $scoop_packages = @(
     "ln",
     "touch",
@@ -12,8 +14,4 @@ $scoop_packages = @(
     "fd"
 )
 
-foreach ($pkg in $scoop_packages) {
-    if (-not (scoop list | Select-String $pkg)) {
-        scoop install $pkg
-    }
-}
+Install-ScoopPackages $scoop_packages
