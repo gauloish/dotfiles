@@ -1,5 +1,5 @@
 scripts
 README.md
-{{ if eq .chezmoi.os "linux" }}
-AppData
+{{ if eq .chezmoi.os "windows" }}
+dot_config/nvim
 {{ end }}

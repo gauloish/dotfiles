@@ -10,14 +10,3 @@ function Install-ScoopPackages {
         }
     }
 }
-
-function Install-PipPackages {
-    param(
-        [Parameter(Mandatory=$true)]
-        [string[]] $Packages
-    )
-
-    foreach ($pkg in $Packages) {
-        pip install $pkg
-    }
-}

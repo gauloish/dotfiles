@@ -11,7 +11,12 @@ $scoop_packages = @(
     "curl",
     "grep",
     "ripgrep",
-    "fd"
+    "fd",
+    "gcc",
+    "make",
+    "cmake",
+    "python"
 )
 
 Install-ScoopPackages $scoop_packages
+py -m ensurepip --upgrade
