@@ -1,6 +1,6 @@
-{{ if eq .chezmoi.os "linux" }}
 #!/bin/sh
 
+{{ if eq .chezmoi.os "linux" }}
 SCRIPTS_DIR="{{ .chezmoi.sourceDir }}/scripts/fedora/"
 
 source $SCRIPTS_DIR/install-packages.sh
