@@ -1,0 +1,1 @@
+Copy-Item -Path "$PSScriptRoot\..\..\images\*" -Destination "$HOME\Pictures" -Recurse -Force

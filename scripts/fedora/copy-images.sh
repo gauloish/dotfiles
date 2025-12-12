@@ -1,0 +1,1 @@
+cp -a $(chezmoi source-path)/images/. $HOME/Imagens

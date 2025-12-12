@@ -1,4 +1,5 @@
 scripts
+images
 README.md
 {{ if eq .chezmoi.os "windows" }}
 dot_config/nvim
